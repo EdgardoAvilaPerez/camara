@@ -50,6 +50,7 @@ public class TomarFoto extends AppCompatActivity {
                Uri output = Uri.fromFile(new File(name));
                intent.putExtra(MediaStore.EXTRA_OUTPUT, output);
                startActivityForResult(intent, code);
+               Toast.makeText(TomarFoto.this, "hola", Toast.LENGTH_SHORT).show();
            }
        });
 
